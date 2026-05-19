@@ -402,3 +402,21 @@ video {
 	width: auto;
 	z-index: 100000;
 }
+
+
+/* 最初は画面の遥か彼方に飛ばして隠しておく */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  background: #bf0000; /* 日本っぽい赤とか */
+  color: white;
+  padding: 10px;
+  z-index: 100;
+  transition: top 0.2s;
+}
+
+/* Tabキーでフォーカスが当たった時だけ、上からスルッと現れる */
+.skip-link:focus {
+  top: 0;
+}

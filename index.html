@@ -3,30 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cho Nippon</title>
+    <link rel="stylesheet" href="styles/normalize-fwd.css">
+	<link rel="stylesheet" href="styles/index.css">
 </head>
-<body>
-  <!-- For Accecibility：skip link -->
+
+<body class="home">
+  
+    <!-- For Accecibility：skip link -->
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
   <!-- header for all pages -->
-  <header>
-    <div class="logo">Discover Japan</div>
-    <nav aria-label="Main Navigation">
-      <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="tourism.html">観光地</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="credits.html">クレジット</a></li>
-      </ul>
-    </nav>
-  </header>
+
+	<header class="site-header">
+		<p>Site Name</p>
+        <nav>
+            <ul>
+                <li><a href="destinations.html">destination</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="credits.html">credits</a></li>
+            </ul>
+        </nav>
+	</header>
 
     <!-- For Accecibility：skip link  -->
-  <main id="main-content">
+    <main id="main-content">
 
-    <!-- 各ページ独自のコンテンツをここに書く -->
-  </main>
+
+        <!-- Each contents per page -->
+        <section class="hero">
+
+            <h1>超日本</h1>
+            <h2>Discover ancient temples, modern cities, and breathtaking landscapes</h2>
+            <a href="destinations.html">Exlore destination</a>
+            <video controls>
+
+                <source src="media/waterfall.mov" type="video/mov" />
+                <p>Your blowser cannot play html videos. You can downlad this video via <a href="media/waterfall.mov" download="waterfall.mp4">this link</a>instead. </p>
+                </p>
+
+            </video>
+            </video>
+        
+        </section>
+
+        <section class="review">
+
+            <img src="images/road.jpg">
+            <blockquote>
+
+                <p>In Japan, tradition dances with innovation, creating a harmony unlike anywhere else on Earth.</p>
+
+            </blockquote>
+            <cite>— Ancient Japanese Proverb</cite>
+
+        </section>
+
+        <section class="purpose">
+
+            <h2>Why Visit Japan?</h2>
+            <p>From the neon-lit streets of Tokyo to the serene temples of Kyoto, Japan offers an unforgettable journey through time and culture. Experience world-class cuisine, stunning natural beauty, and the warmth of Japanese hospitality.</p>
+
+            <h3>Rich Culture</h3>
+            <p>Temples, shrines, and traditions</p>
+
+            <h3>Rich Culture</h3>
+            <p>Temples, shrines, and traditions</p>
+
+            <h3>Rich Culture</h3>
+            <p>Temples, shrines, and traditions</p>
+
+        </section>
+
+    </main>
+
+    <!-- footer for all pages -->
+
+    <footer class="site-footer">
+		<p>&copy; 超日本 2026</p>
+	</footer>
+
 </body>
+
+
 
 </html>
