@@ -1,0 +1,51 @@
+/* Header
+--------------------------------------------- */
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    background-color: #FAFAFA;
+}
+
+
+.nav-menu {
+    list-style: none;
+    display: none;
+
+}
+
+
+#site-navigation.toggled .nav-menu {
+    display: block;
+}
+
+.menu-toggle {
+    display: block;
+    background-color: transparent;
+    border: 0;
+    padding: 0.5rem;
+    cursor: pointer; 
+}
+
+
+@media (min-width: 50em) {
+
+
+    .menu-toggle {
+        display: none;
+    }
+
+
+    .nav-menu {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+}

@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>超日本 cho nippon</title>
     <link rel="stylesheet" href="styles/normalize-fwd.css">
+    <link rel="stylesheet" href="styles/base.css">
 	<link rel="stylesheet" href="styles/index.css">
+    <script src="scripts/navigation.js" defer></script>
 </head>
 
 <body class="home">
@@ -16,15 +18,29 @@
   <!-- header for all pages -->
 
 	<header class="site-header">
-		<p>Site Name</p>
-        <nav>
-            <ul>
-                <li><a href="destinations.html">destination</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="credits.html">credits</a></li>
-            </ul>
-        </nav>
-	</header>
+
+    <a href="index.html" class="site-logo">
+        <p>超日本</p>
+    </a>
+    
+    <nav class="site-navigation" id="site-navigation">
+
+        <button class="menu-toggle" aria-controls="header-menu" aria-expanded="false" aria-label="Menu Toggle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <title>Menu Icon</title>
+                <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"></path>
+            </svg>
+        </button>
+
+        <ul class="nav-menu" id="header-menu">
+            <li><a href="destinations.html">destination</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="credits.html">credits</a></li>
+        </ul>
+            
+    </nav>
+
+    </header>
 
     <!-- For Accecibility：skip link  -->
     <main id="main-content">
@@ -63,14 +79,17 @@
             <h2>Why Visit Japan?</h2>
             <p>From the neon-lit streets of Tokyo to the serene temples of Kyoto, Japan offers an unforgettable journey through time and culture. Experience world-class cuisine, stunning natural beauty, and the warmth of Japanese hospitality.</p>
 
-            <h3>Rich Culture</h3>
-            <p>Temples, shrines, and traditions</p>
+            <img src="images/grandma.png" alt="old woman in countryside of Japan">
+            <h3>Too friendly old people</h3>
+            <p>You can find any lod people there is so friendly that you cannot go home onece you start talking to them.</p>
 
-            <h3>Rich Culture</h3>
-            <p>Temples, shrines, and traditions</p>
+            <img src="images/misosoup.png" alt="miso soup made by old people in Japan">
+            <h3>Homemade Japanese food</h3>
+            <p>It would not be fancy but warm enough to make you feel nostalgic.</p>
 
-            <h3>Rich Culture</h3>
-            <p>Temples, shrines, and traditions</p>
+            <img src="images/nature.png" alt="nature in Japan">
+            <h3>Beautiful Nature</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque sint magnam eligendi, ducimus quidem, repellendus similique mollitia odio aperiam non dolorem cumque! Atque dolore laudantium molestiae neque explicabo nesciunt veritatis!</p>
 
         </section>
 
