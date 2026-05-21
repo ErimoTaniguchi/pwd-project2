@@ -166,13 +166,14 @@ a:focus {
     text-align: center;
     color: #5A7A65;
     padding: 1.5rem 1rem;
+    border: 0.5px solid #5A7A65;
 }
 
 .footer-nav {
     display: flex;
     list-style: none;
     gap: 1rem;
-    margin: 0 0 1rem 0;
+    margin: 1rem 0 0rem 0;
     padding: 0;
 }
 
