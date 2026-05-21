@@ -1,4 +1,7 @@
 
+
+
+
 ul {
 	margin: 1rem 0;
 	padding: 3rem;
@@ -8,6 +11,72 @@ li {
     font-size: 1.5rem;
 }
 
+
+/* Typography
+--------------------------------------------- */
+body {
+	font-family: sans-serif;
+	font-size: 1.125rem;
+	font-weight: 400;
+	line-height: 1.6;
+	color: 1A1A1A;
+	background-color: #FAFAFA;
+    /* margin: 0 2rem; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: serif;
+	margin: .5em 0;
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+h1 {
+    font-family: "Shippori Mincho", serif;
+    font-weight: 600;
+    font-style: normal;
+	font-size: 5rem;
+    color: #FAFAFA;
+}
+
+h2 {
+	font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+p {
+    font-size: 1rem;
+	margin: 1rem 0;
+}
+
+
+
+
+/* Links
+--------------------------------------------- */
+a,
+a:visited { 
+	color: #2D7A4F;
+	text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+	color: rgba(0, 0, 0, .5);
+}
+
+a:focus {
+	outline: 1px dotted;
+}
 
 /* Header
 --------------------------------------------- */
@@ -24,6 +93,11 @@ li {
     background-color: #FAFAFA;
 }
 
+.site-logo img {
+    height: 4rem;    
+    width: auto;     
+    display: block;
+}
 
 .nav-menu {
     list-style: none;
@@ -39,7 +113,7 @@ li {
 .site-navigation ul {
 	display: none;
 	position: absolute;
-	top: 2rem;
+	top: 3rem;
 	left: 0;
 	right: 0;
 	background-color: #FAFAFA;
@@ -60,6 +134,9 @@ li {
     cursor: pointer; 
 }
 
+.menu-toggle svg {
+    fill: #2D7A4F ;
+}
 
 @media (min-width: 50em) {
 
@@ -75,4 +152,30 @@ li {
         align-items: center;
     }
 
+}
+
+/* Footer
+--------------------------------------------- */
+
+.site-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1rem;
+    text-align: center;
+    color: #5A7A65;
+    padding: 1.5rem 1rem;
+}
+
+.footer-nav {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    margin: 0 0 1rem 0;
+    padding: 0;
+}
+
+.footer-nav li {
+    font-size: 1rem;
 }

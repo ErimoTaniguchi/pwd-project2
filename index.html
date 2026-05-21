@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>超日本 cho nippon</title>
+    <title>超日本｜Countryside in Japan</title>
     <link rel="stylesheet" href="styles/normalize-fwd.css">
     <link rel="stylesheet" href="styles/base.css">
 	<link rel="stylesheet" href="styles/index.css">
@@ -12,6 +12,9 @@
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="apple-touch-icon.png"/>
     <link rel="manifest" href="site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body class="home">
@@ -24,7 +27,7 @@
 	<header class="site-header">
 
     <a href="index.html" class="site-logo">
-        <p>超日本</p>
+        <img src="favicon-96x96.png" alt="site logo">
     </a>
     
     <nav class="site-navigation" id="site-navigation">
@@ -53,47 +56,60 @@
         <!-- Each contents per page -->
         <section class="hero">
 
-            <h1>超日本</h1>
-            <h2>Discover ancient temples, modern cities, and breathtaking landscapes</h2>
-            <a href="destinations.html">Exlore destination</a>
-            <video controls>
-
+            <video autoplay loop muted playsinline class="hero-video">
                 <source src="media/waterfall.mp4" type="video/mp4">
-                <p>Your blowser cannot play html videos! You can downlad this video via <a href="media/waterfall.mp4" download="waterfall.mp4">this link</a>instead. </p>
-                </p>
-
+                <p>Your browser cannot play html videos! You can download this video via <a href="media/waterfall.mp4" download="waterfall.mp4">this link</a> instead.</p>
             </video>
-        
+
+            <div class="hero-content">
+                <h1>超日本</h1>
+                <h2>Tokyo, Osaka and Kyoto are only the beginning.</h2>
+                <a href="destinations.html" class="hero-btn">Explore the Countryside</a>
+            </div>
+
         </section>
 
         <section class="review">
 
-            <img src="images/road.jpg">
             <blockquote>
-
+                
                 <p>In Japan, tradition dances with innovation, creating a harmony unlike anywhere else on Earth.</p>
-
+                
             </blockquote>
             <cite>— Ancient Japanese Proverb</cite>
 
+            
         </section>
-
+        
         <section class="purpose">
 
-            <h2>Why Visit Japan?</h2>
+            <h2>Why Visit Countryside?</h2>
+
             <p>From the neon-lit streets of Tokyo to the serene temples of Kyoto, Japan offers an unforgettable journey through time and culture. Experience world-class cuisine, stunning natural beauty, and the warmth of Japanese hospitality.</p>
 
-            <img src="images/grandma.png" alt="old woman in countryside of Japan">
-            <h3>Too friendly old people</h3>
-            <p>You can find any lod people there is so friendly that you cannot go home onece you start talking to them.</p>
+            <div class="explanation">
 
-            <img src="images/miso_soup.png" alt="miso soup made by old people in Japan">
-            <h3>Homemade Japanese food</h3>
-            <p>It would not be fancy but warm enough to make you feel nostalgic.</p>
+                <img src="images/grandma.png" alt="old woman in countryside of Japan">
+                <h3>Too friendly old people</h3>
+                <p>You can find any lod people there is so friendly that you cannot go home onece you start talking to them.</p>
+                
+            </div>
 
-            <img src="images/nature.png" alt="nature in Japan">
-            <h3>Beautiful Nature</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque sint magnam eligendi, ducimus quidem, repellendus similique mollitia odio aperiam non dolorem cumque! Atque dolore laudantium molestiae neque explicabo nesciunt veritatis!</p>
+            <div class="explanation">
+
+                <img src="images/miso_soup.png" alt="miso soup made by old people in Japan">
+                <h3>Homemade Japanese food</h3>
+                <p>It would not be fancy but warm enough to make you feel nostalgic.</p>
+                
+            </div>
+
+            <div class="explanation">
+
+                <img src="images/nature.png" alt="nature in Japan">
+                <h3>Beautiful Nature</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque sint magnam eligendi, ducimus quidem, repellendus similique mollitia odio aperiam non dolorem cumque! Atque dolore laudantium molestiae neque explicabo nesciunt veritatis!</p>
+                
+            </div>
 
         </section>
 
@@ -102,7 +118,16 @@
     <!-- footer for all pages -->
 
     <footer class="site-footer">
-		<p>&copy; 超日本 2026</p>
+        
+        <ul class="footer-nav">
+            <li a href="index.html">Home</li>
+            <li><a href="destinations.html">destination</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="credits.html">credits</a></li>
+        </ul>
+
+        <p>&copy; 超日本 2026. All rights reserved.</p>
+            
 	</footer>
 
 </body>
