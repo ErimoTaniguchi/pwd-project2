@@ -101,6 +101,10 @@ a.hero-btn{
     color: #2D7A4F;
 }
 
+.purpose p {
+    text-align: center;
+} 
+
 .explanation {
     margin: 4rem 0;
     text-align: center;

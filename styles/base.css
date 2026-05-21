@@ -8,7 +8,7 @@ ul {
 }
 
 li {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 
@@ -71,12 +71,10 @@ a:visited {
 a:hover,
 a:focus,
 a:active {
-	color: rgba(0, 0, 0, .5);
+	color: #1a1a1a99;
 }
 
-a:focus {
-	outline: 1px dotted;
-}
+
 
 /* Header
 --------------------------------------------- */
@@ -94,25 +92,16 @@ a:focus {
 }
 
 .site-logo img {
-    height: 4rem;    
+    height: 3rem;    
     width: auto;     
     display: block;
+    margin: 0.5rem 0.5rem;
 }
 
 .nav-menu {
     list-style: none;
     display: none;
-
-}
-
-
-#site-navigation.toggled .nav-menu {
-    display: block;
-}
-
-.site-navigation ul {
-	display: none;
-	position: absolute;
+    position: absolute;
 	top: 3rem;
 	left: 0;
 	right: 0;
@@ -120,6 +109,12 @@ a:focus {
     width: 100vw;
     height: 100vh;
 }
+
+
+#site-navigation.toggled .nav-menu {
+    display: block;
+}
+
 
 .site-navigation li {
     padding: 2rem 0;
@@ -145,13 +140,30 @@ a:focus {
         display: none;
     }
 
+    .site-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
 
     .nav-menu {
         display: flex;
-        justify-content: space-around;
+        justify-content: flex-end;
         align-items: center;
+        gap: 2rem;          
+        position: static;
+        width: auto;
+        height: auto;
+        margin: 0;
+        padding: 0;
     }
 
+     .nav-menu li{
+        margin: 0;
+        padding: 0 1rem; 
+        font-weight: 600;
 }
 
 /* Footer
