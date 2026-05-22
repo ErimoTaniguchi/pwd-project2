@@ -144,7 +144,6 @@ a:active {
         display: flex;
         justify-content: space-between;
         align-items: center;
-
     }
 
 
@@ -164,6 +163,7 @@ a:active {
         margin: 0;
         padding: 0 1rem; 
         font-weight: 600;
+}
 }
 
 /* Footer
