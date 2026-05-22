@@ -1,0 +1,19 @@
+/* Hero
+--------------------------------------------- */
+
+.credits-top {
+    background-color:#F1F8F4;
+    text-align: center;
+    margin-top: 5rem;
+    padding: 1rem 1rem 2rem 1rem;
+}
+
+.credits-top h1 {
+   color: #1a1a1a;
+   font-size: 2rem;
+}
+
+.credits-top p {
+    color: #1a1a1a99;
+}
+
