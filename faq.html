@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find helpful answers and practical travel tips for exploring the Japanese countryside smoothly.">
     <title>超日本｜Countryside in Japan</title>
     <link rel="stylesheet" href="styles/normalize-fwd.css">
     <link rel="stylesheet" href="styles/base.css">
-	<link rel="stylesheet" href="styles/index.css">
+	<link rel="stylesheet" href="styles/faq.css">
     <script src="scripts/navigation.js" defer></script>
     <link rel="icon" href="favicon.ico" sizes="any"> 
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -15,6 +16,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body class="home">
@@ -62,56 +66,54 @@
             
         </section>
 
-        <section class="tb-content">
-            
+        <section class="tb-content" >
+                    
             <h2>Best Seasons to Visit</h2>
-            <table>
 
-                <figcaption>aaa</figcaption>
-                <thead>
-                    <tr>
-                        <th>Season</th>
-                        <th>Top Cities</th>
-                        <th>Avg Temp</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Spring (March-May)</td>
-                        <td>Wakayama,Kagoshima</td>
-                        <td>10-25°C</td>
-                    </tr>
-                </tbody>
- 
-                <tbody>
-                    <tr>
-                        <td>Summer (June-August)</td>
-                        <td>None</td>
-                        <td>25-40°C</td>
-                    </tr>
-                </tbody>
+            <div class="table-container" tabindex="0">
+                <table>
 
-                <tbody>
-                    <tr>
-                        <td>Autumn (September-November)</td>
-                        <td>Wakayama,Kagoshima</td>
-                        <td>15-25°C</td>
-                    </tr>
-                </tbody>
+                    <caption class="sr-only">Average temperatures and recommended cities by season in Japan</caption>
 
-                <tbody>
-                    <tr>
-                        <td>Winter (December-February)</td>
-                        <td>Wakayama,Kagoshima</td>
-                        <td>0-5°C</td>
-                    </tr>
-                </tbody>
+                    <thead>
+                        <tr>
+                            <th scope="col">Season</th>
+                            <th scope="col">Top Cities</th>
+                            <th scope="col">Avg Temp</th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                        <tr>
+                            
+                            <td>Spring (March - May)</td>
+                            <td>Oita, Kagoshima, Wakayama,</td>
+                            <td>10 - 25°C</td>
+                        </tr>
+                        <tr>
+                            <td>Summer (June - August)</td>
+                            <td>None</td>
+                            <td>25 - 40°C</td>
+                        </tr>
+                        <tr>
+                            <td>Autumn (September - November)</td>
+                            <td>Oita, Kagoshima, Wakayama,</td>
+                            <td>15 - 25°C</td>
+                        </tr>
+                        <tr>
+                            <td>Winter (December - February)</td>
+                            <td>Oita, Kagoshima, Wakayama,</td>
+                            <td>0 - 5°C</td>
+                        </tr>
+                    </tbody>
 
-            </table>
+                </table>
+
+            </div>
 
         </section>
 
-        <section class="FAQ">
+        <section class="faq">
              <h2>Frequently Asked Questions</h2>
 
             <div class="faq-item">
@@ -143,6 +145,40 @@
             </div>
 
         </section>
+
+
+       <section class="contact-section">
+            
+            <h2>Contact us</h2>
+
+            <p>Have a question? Send us a message and we'll get back to you as soon as possible.</p>
+
+            <form class="contact-form" action="#" method="POST">
+
+                <div class="form-group">
+                    <label for="contact-nam">Name</label>
+                    <input type="text" id= "contact-name" name="contact-name" required autocomplete="name">
+                </div>
+
+                <div class="form-group">
+                    <label for="contact-email">Email</label>
+                    <input type="email" name="email" id="contact-email" required autocomplete="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="contact-message">Message</label>
+                    <textarea name="message" id="contact-message" rows="6" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+                    <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
+                    </svg>
+                    Send Message
+                </button>
+
+            </form>
+       </section> 
 
 
     </main>

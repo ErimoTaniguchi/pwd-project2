@@ -93,21 +93,17 @@ a.hero-btn{
 .purpose {
     background-color: #F1F8F4;
     padding: 2.5rem 2rem;
-  
+    text-align: center;
+    margin-bottom: 0;
 }
 
 .purpose h2, .purpose h3 {
-    text-align: center;
+    
     color: #2D7A4F;
 }
 
-.purpose p {
-    text-align: center;
-} 
-
 .explanation {
     margin: 4rem 0;
-    text-align: center;
 }
 
 .explanation img {
@@ -118,4 +114,22 @@ a.hero-btn{
 
 .explanation p {
     color: #1A1A1A;
+}
+
+@media (min-width: 50em) {
+
+    .purpose-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+    }
+
+    .explanation {
+        padding: 0 1rem;
+    }
+
+    .explanation p {
+        color: #1A1A1A;
+        margin-bottom: 0; 
+    }
 }

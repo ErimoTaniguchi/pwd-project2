@@ -1,4 +1,4 @@
-/* Top
+/* Hero
 --------------------------------------------- */
 
 .destinations-top h1 {
@@ -32,11 +32,7 @@
     box-shadow: 0 0.5px 10px #1a1a1a40;
     max-width: 20rem;
     margin: 0 auto 1rem auto;
-}
-
-.place-card:hover {
-    transform: translateY(-6px);
-    transition: transform 0.3s ease;
+    position: relative; 
 }
 
 .place-card img {
@@ -62,15 +58,29 @@
     padding: 0 1rem 1rem 1rem;
 }
 
+.place-card a::before {
+    content: "";
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; 
+}
+
 .place-card a::after {
   content: "→";           
   margin-left: 5px;       
   font-size: 1rem;
-  transition: transform 0.3s ease;
-  display: inline-block; 
+  transition: transform 0.3s ease; 
 }
 
-.place-card a:hover::after {
+.place-card:hover {
+    transform: translateY(-6px);
+    transition: transform 0.3s ease;
+}
+
+.place-card:hover::after {
   transform: translateX(4px);
 }
 

@@ -1,5 +1,15 @@
 
-
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
 
 
 ul {
@@ -30,7 +40,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: serif;
+	font-family: Inter;
 	margin: .5em 0;
 	font-size: 1.5rem;
 	font-weight: 700;
@@ -39,7 +49,7 @@ h6 {
 
 h1 {
     font-family: "Shippori Mincho", serif;
-    font-weight: 600;
+    font-weight: 700;
     font-style: normal;
 	font-size: 5rem;
     color: #FAFAFA;
@@ -54,8 +64,17 @@ h3 {
 }
 
 p {
+    font: Inter;
     font-size: 1rem;
 	margin: 1rem 0;
+    font-weight: 100;
+}
+
+dt,
+dd {
+    font: Inter;
+    font-size: 1rem;
+    font-weight: 100;
 }
 
 
@@ -63,6 +82,10 @@ p {
 
 /* Links
 --------------------------------------------- */
+a {
+    font-family: Inter;
+}
+
 a,
 a:visited { 
 	color: #2D7A4F;
@@ -108,12 +131,13 @@ a:active {
 	right: 0;
 	background-color: #FAFAFA;
     width: 100vw;
-    height: 100vh;
+   
 }
 
 
 #site-navigation.toggled .nav-menu {
     display: block;
+    height: 100vh;
 }
 
 
@@ -180,6 +204,7 @@ a:active {
     color: #5A7A65;
     padding: 1.5rem 1rem;
     border: 0.5px solid #5A7A65;
+    
 }
 
 .footer-nav {

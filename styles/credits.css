@@ -1,19 +1,62 @@
 /* Hero
 --------------------------------------------- */
 
-.credits-top {
-    background-color:#F1F8F4;
-    text-align: center;
-    margin-top: 5rem;
-    padding: 1rem 1rem 2rem 1rem;
-}
-
 .credits-top h1 {
    color: #1a1a1a;
    font-size: 2rem;
+   z-index: 100000;
 }
 
 .credits-top p {
     color: #1a1a1a99;
 }
 
+.credits-top {
+    background-color:#F1F8F4;
+    text-align: center;
+    padding: 6rem 1rem 3rem 1rem;
+}
+
+/* credits
+--------------------------------------------- */
+
+.credits-container {
+    display: flex;
+    gap: 1rem;
+    
+    flex: 1;
+}
+.credits-link {
+    margin: 2rem 1rem;
+}
+
+.credits-cards {
+    border: 1px solid #1a1a1a60;
+    box-shadow: 0 0.5px 10px #1a1a1a40;
+    border-radius: 8px;
+    padding: 1rem;
+    flex: 1;
+
+}
+
+.credits-item {
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+
+.credits-item dt {
+    color: #5A7A65;
+}
+
+.credits-cards a::after {
+  content: "→";           
+  margin-left: 5px;       
+  font-size: 1rem;
+  transition: transform 0.3s ease;
+  display: inline-block; 
+}
+
+.credits-cards a:hover::after {
+  transform: translateX(4px);
+}
