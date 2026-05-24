@@ -60,3 +60,10 @@
 .credits-cards a:hover::after {
   transform: translateX(4px);
 }
+
+.icon-credit {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
