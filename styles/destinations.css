@@ -72,7 +72,6 @@
   content: "→";           
   margin-left: 5px;       
   font-size: 1rem;
-  transition: transform 0.3s ease; 
 }
 
 .place-card:hover {
@@ -80,9 +79,6 @@
     transition: transform 0.3s ease;
 }
 
-.place-card:hover::after {
-  transform: translateX(4px);
-}
 
 @media (min-width: 50em) {
 

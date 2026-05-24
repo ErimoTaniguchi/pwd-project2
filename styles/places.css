@@ -1,0 +1,203 @@
+/* Hero
+--------------------------------------------- */
+
+.places-top h1 {
+   color: #1a1a1a;
+   font-size: 2rem;
+}
+
+.places-topp {
+    color: #1a1a1a99;
+}
+
+.places-top {
+    background-color:#F1F8F4;
+    text-align: center;
+    margin-top: 5rem;
+    padding: 1rem 1rem 2rem 1rem;
+}
+
+main {
+    margin: 0rem 1rem 0rem 1rem;
+}
+
+
+/* back to destination
+--------------------------------------------- */
+
+.overview {
+    margin: 2rem 0 0 0 ;
+}
+
+.contents a::before {
+    content: "←";
+    margin-right: 0.5rem;
+    font-size: 1rem;
+    transition: transform 0.3s ease; 
+}
+
+.contents a:hover {
+    transform: translateY(-6px);
+    transition: transform 0.3s ease;
+}
+
+.contents a {
+    display: inline-block;
+    margin: 2rem 0;
+}
+
+/* Overview
+--------------------------------------------- */
+
+.overview-card {
+    border: 1px solid #1a1a1a60;
+    box-shadow: 0 0.5px 10px #1a1a1a40; 
+    border-radius: 8px;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.icon-title {
+    display: grid;
+    grid-template-columns:2rem 1fr;
+    align-items: center;
+    column-gap: 0.5rem;
+    margin: 2rem 0 1rem 0;
+}
+
+.icon-title svg {
+    fill: #2D7A4F
+}
+
+.icon-title p {
+    grid-row: 2 / 3 ;
+    grid-column: 2 / 3 ;
+    justify-content: start;
+    color: #5A7A65;
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+.icon-title h3 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* Highlights
+--------------------------------------------- */
+
+.highlights {
+    margin: 2rem 0 0 0 ;
+}
+
+.highlights-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.highlights-card {
+    border: 1px solid #1a1a1a60;
+    box-shadow: 0 0.5px 10px #1a1a1a40; 
+    border-radius: 8px;
+    padding: 0.8rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.highlights-card svg {
+    fill: #2D7A4F;
+    z-index: 100;
+}
+
+
+/* Major Attractions
+--------------------------------------------- */
+
+.Major-Attractions {
+    margin: 2rem 0 0 0;
+}
+
+.Attractions-card {
+    border: 1px solid #1a1a1a60;
+    box-shadow: 0 0.5px 10px #1a1a1a40; 
+    border-radius: 8px;
+    padding: 0.8rem 1rem;
+    margin: 1rem 0;
+}
+
+.Attractions-card h3 {
+    color: #2D7A4F;
+    font-weight: 500;
+}
+
+
+/* tips
+--------------------------------------------- */
+
+.travel-tips {
+    margin: 2rem 0 0 0;
+}
+
+.tips-card {
+    border: 1px solid #1a1a1a60;
+    box-shadow: 0 0.5px 10px #1a1a1a40; 
+    border-radius: 8px;
+}
+
+.tips-card ul {
+    margin: 0;
+    padding: 1rem 2rem;
+}
+
+.tips-card li {
+    margin: 0;
+    font-size: 1rem;
+    padding: 0.5rem 0;
+}
+
+/* message
+--------------------------------------------- */
+
+.message {
+    margin: 2rem 0 0 0;
+    text-align: center;
+    background-color: #F1F8F4;
+    padding: 2rem ;
+}
+
+.message a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    padding: 0.5rem;
+    background-color: #2d7a4f;
+    color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #F1F8F4;
+    box-shadow: 0 1px 10px #1a1a1a20;
+    margin: 1rem 0;
+}
+
+.submit-btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #2d7a4f;
+    color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #F1F8F4;
+    box-shadow: 0 1px 10px #1a1a1a20;
+    margin: 1rem 0;
+}
+
+.message a:hover {
+    background-color:  #2d7a4f30;
+    color: #2D7A4F;
+}
